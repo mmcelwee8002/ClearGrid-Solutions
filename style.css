@@ -293,6 +293,9 @@ ol {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 100%;   /* 👈 THIS IS THE FIX */
+    width: 100%;       /* 👈 add this too */
+  }
   }
 
   .before-after-content h2 {
@@ -351,5 +354,21 @@ ol {
     max-width: 100%;
     text-align: center;
   }
+@media (max-width: 768px) {
+  .before-after-content,
+  .free-sample-content {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .before-after img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
+
 }
