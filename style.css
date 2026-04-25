@@ -276,4 +276,80 @@ ol {
   }
 }
 
+/* Mobile polish */
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .before-after {
+    padding: 48px 20px;
+  }
+
+  .before-after-content {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .before-after-content h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .before-after-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+
+  .before-after img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+    margin-bottom: 22px;
+  }
+
+  .free-sample {
+    padding: 44px 20px;
+  }
+
+  .free-sample-content {
+    text-align: left;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .free-sample-content h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .free-sample-content p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card {
+    padding: 28px 20px;
+  }
+
+  .cta-button,
+  .button {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+}
 }
