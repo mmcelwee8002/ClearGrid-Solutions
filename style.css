@@ -370,5 +370,21 @@ ol {
     max-width: 100% !important;
   }
 }
+@media (max-width: 768px) {
+  .before-after {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .before-after-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
 
 }
