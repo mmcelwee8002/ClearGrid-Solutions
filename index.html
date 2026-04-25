@@ -9,11 +9,11 @@
 <body>
   <header class="hero">
     <div class="container">
-      <p class="eyebrow">Spreadsheet Cleanup • Document Formatting • Quick Turnaround</p>
+      <p class="eyebrow">Spreadsheet Cleanup • Document Formatting • PowerPoint Cleanup • Quick Turnaround</p>
       <h1>ClearGrid Solutions</h1>
       <p class="subtitle">
-        I help turn messy spreadsheets and rough documents into clean, polished, usable work.
-      </p>
+I help turn messy spreadsheets, documents, and presentations into clean, polished, professional work.
+</p>
 <p style="margin-top:10px; opacity:0.8;">
   Trusted by professionals who need fast, clean, and reliable results.
 </p>
@@ -26,14 +26,24 @@
   <div class="before-after-content">
     <h2>See the difference in minutes</h2>
     <p>
-      We take cluttered spreadsheets and documents and turn them into clean,
-      professional, presentation-ready assets—fast.
-    </p>
+  We take cluttered spreadsheets, documents, and presentations and turn them into clean,
+  professional, presentation-ready assets—fast.
+</p>
+
+<p>
+  Excel, Word, and PowerPoint—cleaned up and ready to present.
+</p>
 
     <img
       src="images/before-after-example.png"
       alt="Before and after example"
+      class="clickable-image"
     />
+    <img
+  src="images/powerpoint-before-after.png"
+  alt="PowerPoint before and after example"
+  class="clickable-image"
+/>
 
     <a href="mailto:mmcelwee8002@gmail.com" class="cta-button">
       Get a Free Sample
@@ -60,6 +70,7 @@
   <main class="container">
     <section class="card">
       <h2>What I Help With</h2>
+
       <div class="services">
         <div class="service-box">
           <h3>Spreadsheet Cleanup</h3>
@@ -73,6 +84,11 @@
           <h3>Document Formatting</h3>
           <p>Turn rough drafts into polished, consistent, professional-looking documents.</p>
         </div>
+<div class="service-box">
+    <h3>PowerPoint Cleanup</h3>
+    <p>Turn cluttered slides into clean, professional, presentation-ready decks.</p>
+  </div>
+
       </div>
     </section>
 
@@ -140,5 +156,36 @@
       <p><strong>Email:</strong> mmcelwee8002@gmail.com</p>
     </section>
   </main>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage" />
+</div>
+
+<script>
+  
+  const modal = document.getElementById("imageModal");
+ const modalImg = document.getElementById("modalImage");
+  const images = document.querySelectorAll(".clickable-image");
+  const closeBtn = document.querySelector(".close");
+
+  images.forEach(img => {
+    img.onclick = function () {
+    modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = function (e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
+
 </body>
 </html>
